@@ -1,6 +1,6 @@
 # alpha
 
-blazing-fast, type-safe, and React hooks, utilities. Built with performance and developer experience in mind.
+Built with performance and developer experience in mind.
 
 ---
 
