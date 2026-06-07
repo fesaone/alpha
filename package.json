@@ -1,0 +1,69 @@
+{
+  "name": "alpha-kit",
+  "version": "1.0.0",
+  "description": "A blazing-fast, type-safe, and meticulously crafted collection of React hooks, utilities, and UI components for modern web applications.",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript",
+    "utilities",
+    "ui-components",
+    "alpha-kit"
+  ],
+  "author": "fesaone",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    
+    "./ui/hooks": {
+      "import": "./src/hooks/index.ts",
+      "types": "./src/hooks/index.ts"
+    },
+    "./ui/utils": {
+      "import": "./src/utils/index.ts",
+      "types": "./src/utils/index.ts"
+    },
+    "./ui/components": {
+      "import": "./src/components/index.ts",
+      "types": "./src/components/index.ts"
+    },
+
+    "./engine/core": {
+      "import": "./src/core/nexus.py"
+    },
+    "./engine/crypto": {
+      "import": "./src/crypto/enclave.py"
+    },
+    "./engine/net": {
+      "import": "./src/net/mplex.py"
+    },
+    "./engine/data": {
+      "import": "./src/data/cardinality.py"
+    },
+    "./engine/compute": {
+      "import": "./src/compute/qcore.py"
+    }
+  }
+}
